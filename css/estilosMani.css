@@ -1,0 +1,80 @@
+.navbar-brand{
+	font-size: 1.8em;
+}
+#topContainer{
+	background-image: url("../img/ordenaMovil.jpeg");
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+}
+#topRow{
+	margin-top: 250px;
+	text-align: center;
+}
+
+#topRow h1{
+	font-size: 300%;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.marginTop{
+	margin-top: 30px;
+}
+
+.center{
+	text-align: center;
+}
+
+.title{
+	margin-top: 100px;
+	font-size: 300%;
+}
+
+#footer{
+	background-color: #D3BEB9;
+	width: 100%;
+}
+
+.marginBotton{
+	margin-bottom:  30px;
+}
+
+.mani{
+	font-size: .7em;
+	color: #757678;
+}
+
+#continuar{
+	width: 100px;
+}
+.glyphicon-lg{
+	font-size: 50px;
+
+}
+.rightCol{
+	border-right: solid;
+}
+a{
+	color: #333333;
+}
+a:hover{
+	text-decoration: none;
+	color: #333333;
+}
+.cabeceraContacto{
+	background-color: #D3BEB9;
+}
+
+#capaCookie{
+	position: fixed;
+	background-color: #757678;
+	opacity: .7; 
+	padding: 10px;
+}	
+
+#capaCookie span{
+	font-size: 1.5em;
+}		

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>M&eacutetodo Montecarlo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabel=no">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Manolo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>M&eacutetodo Montecarlo</h1>
+                    <div class="row">
+                        <p><a class="pull-right small" href="#">Email <span class="glyphicon glyphicon-envelope"></span></a></p>
+                    </div>
+                    <div class="row">
+                        <p><a class="pull-right small" href="#">Mapa web <span class="glyphicon glyphicon-book"></span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li ><a class="text-success" href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Trabajos <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.elmundo.es/grafico/economia/2014/10/01/542c442a268e3ee96c8b457c.html">Las cifras del paro</a></li>
+                        <li><a href="http://www.elmundo.es/grafico/economia/2014/10/24/544a3a98268e3ece028b456d.html">Evolución histórica del paro</a></li>
+                        <li><a href="http://www.elmundo.es/grafico/espana/2014/11/03/5453d2e6268e3e8d7f8b456c.html">El mapa de la corrupci&oacute;n</a></li>
+                    </ul>
+                </li>
+                <li class="active" >
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Curiosidades <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="montecarlo.html">M&eacute;todo Montecarlo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Curriculum</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>C&aacute;lculo de PI por el m&eacute;todo Montecarlo</h2>
+                    <p>PI es un 
+                        n&uacute;mero irracional del que es imposible conocer su valor exacto puesto que consta de infinitas cifras decimales. El m&eacute;todo 
+                        Montecarlo es un m&eacute;todo para averiguar por aproximaci&oacute;n el valor exacto de PI. 
+                        Consiste en la generaci&oacute;n aleatoria de puntos, al modo de como lo har&iacute;a la ruleta de un casino de Montecarlo.
+                    </p>
+                    <p>
+                        Su funcionamiento es el siguiente: se toma un cuadrante de circuferencia en cuadrado de lado 1. Su &aacute;rea
+                        valdr&aacute; por tanto 1. El programa crea puntos que situar&aacute; en este cuadrante, unos quedar&aacute;n fuera de la circuferencia
+                        y otros dentro. La relaci&oacute;n entre los puntos que est&aacute;n dentro y los que est&aacute;n fuera ser&aacute; aproximadamente igual
+                        a la relaci&oacute;n entre el area del cuadrante y la del cuadrado, sobre todo al aumentar el numero de puntos. 
+                    </p>
+                    <p>
+                        Los puntos que caen dentro de la circuferencia del primer cuadrante nos dar&aacute; su &aacute;rea, que multiplicada por 4 nos 
+                        dar&aacute; una aproximación a PI.
+                    </p></div>
+                <div class="col-md-5"><svg width="500" height="300">
+                    <rect x="0" y="0" width="300" height="300" fill="white" stroke="black" stroke-width="2"/>
+                    <rect x="150" y="0" width="150" height="150" fill="gray"/>
+                    <circle cx="150" cy="150" r="148" fill="white" stroke="black" stroke-width="2" opacity="0.5"/>
+                    <line x1="0" y1="150" x2="300" y2="150" stroke="black"/>
+                    <line x1="150" y1="0" x2="150" y2="300" stroke="black"/>
+                    <circle cx="250" cy="120" r="5"/>
+                    <circle cx="250" cy="20" r="5"/>
+                    <line x1="250" y1="120" x2="350" y2="120" stroke="black"/>
+                    <line x1="250" y1="20" x2="350" y2="20" stroke="black"/>
+                    <text x="350" y="18" font-size="12" fill="gray">Punto exterior</text>
+                    <text x="350" y="118" font-size="12" fill="gray">Punto interior</text>
+                    <text x="160" y="175" font-size="24" fill="gray">Radio = 1</text>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Calcula PI</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-2">
+                    <svg width="300" height="300" id="cuadrante">
+                    <circle cx="0" cy="300" r="300" fill="white" stroke="black" stroke-width="2" />
+                    <rect x="0" y="0" width="300" height="300" stroke="black" stroke-width="2" fill="white" opacity="0.5"/>
+                    <svg id="cuadrantePuntos"></svg>
+                    </svg>
+                    <script type="text/javascript">
+
+
+
+                        function tecla() {
+                            var numeroVeces = 0;
+                            var dentro = 0;
+                            var cuadrante = document.getElementById("cuadrante");
+                            var circulo = document.createElement("circle");
+                            circulo.setAttribute("r", "2");
+                            d3.select("#cuadrantePuntos").selectAll("circle").remove();
+                            //Recibimos en cada pulsación el código de la tecla cuando es enter, su valor es 13 y entra en el código
+                            //if (event.keyCode == 13) {
+                            numeroVeces = document.getElementById("numeroVeces").value;
+
+                            try {
+                                numeroVeces = Number(numeroVeces)
+
+                                if (numeroVeces == "")
+                                    throw "No has escrito nada";
+                                if (isNaN(numeroVeces))
+                                    throw "No es un numero"
+                                if (numeroVeces > 10000)
+                                    throw "Es demasiado alto"
+
+
+                                for (var i = 0; i < numeroVeces; i++) {
+                                    x = Math.random();
+                                    y = Math.random();
+                                    if (Math.pow(x, 2) + Math.pow(y, 2) <= 1) {
+                                        dentro++;
+                                    }
+
+
+                                    d3.select("#cuadrantePuntos").append("circle").attr("cx", x * 300).attr("cy", y * 300).attr("r", 1);
+
+                                }
+                                if (document.getElementById("parrafo")) {
+                                    var parr = document.getElementById("parrafo");
+                                    parr.parentNode.removeChild(parr);
+                                }
+                                var resultado = ((4 * dentro) / numeroVeces);
+                                var parrafo = document.createElement("p");
+                                var contenido = document.createTextNode("Se han creado " + numeroVeces + " puntos aleatorios. El resultado es: " + resultado);
+                                parrafo.setAttribute("id", "parrafo");
+
+                                parrafo.appendChild(contenido);
+
+                                document.getElementById("resultado").appendChild(parrafo);
+                            }
+                            catch (err) {
+                                alert(err);
+                            }
+
+
+                        }
+
+                    </script>
+                </div>
+                <div class="col-md-4 col-md-push-2">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="numeroPuntos">Introduce el numero de puntos </label>
+                            <div class="row">
+                                <div class="col-row-8">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" id="numeroVeces">
+                                        
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-success" onclick="tecla()" >Pulsa para calcular PI</button>
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                    <div id="resultado">
+                        <p id="parrafo">Resultado</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron">
+                <div class="container">
+                    <h6 class="text-center"><a class="" href="http://glyphicons.com/">Glyphicons</a></h6>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

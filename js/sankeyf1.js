@@ -51,7 +51,9 @@
                             return Math.max(1, d.dy);
                         })
                                 .style("stroke",function(d){
-                                    if(d.temporada=="2012"){
+                                    if(d.temporada == "2013"){
+                                        return "ff0";
+                                    }else if(d.temporada=="2012"){
                                         return "#f00";
                                     }else if(d.temporada=="2011"){
                                         return "#0f0";

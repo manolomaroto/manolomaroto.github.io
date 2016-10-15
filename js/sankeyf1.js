@@ -52,7 +52,7 @@
                         })
                                 .style("stroke",function(d){
                                     if(d.temporada == "2013"){
-                                        return "ff0";
+                                        return "#f30";
                                     }else if(d.temporada=="2012"){
                                         return "#f00";
                                     }else if(d.temporada=="2011"){

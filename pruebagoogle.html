@@ -9,6 +9,17 @@
 <body>
     <h1>Probando la API</h1>
     <button>Pulsa</button>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=700412627703-shq6uc6m53p8eeu8ge8iq9hfk6v5oscj.apps.googleusercontent.com"></script>
     <script>
         document.querySelector('button').addEventListener('click',() => {
             alert('Echo');
